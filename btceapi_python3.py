@@ -82,6 +82,10 @@ class api:
   params = { "pair" : tpair }
   return self.__api_call('ActiveOrders', params)
 
+ def OrderInfo(self, torder_id):
+  params = {"order_id": torder_id}
+  return self.__api_call('OrderInfo', params
+
  def Trade(self, tpair, ttype, trate, tamount):
   params = {
    "pair"	: tpair,
